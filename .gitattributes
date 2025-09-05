@@ -1,63 +1,190 @@
-###############################################################################
-# Set default behavior to automatically normalize line endings.
-###############################################################################
-* text=auto
+# ======================
+# ТЕКСТОВЫЕ ФАЙЛЫ
+# ======================
 
-###############################################################################
-# Set default behavior for command prompt diff.
-#
-# This is need for earlier builds of msysgit that does not have it on by
-# default for csharp files.
-# Note: This is only used by command line
-###############################################################################
-#*.cs     diff=csharp
 
-###############################################################################
-# Set the merge driver for project and solution files
-#
-# Merging from the command prompt will add diff markers to the files if there
-# are conflicts (Merging from VS is not affected by the settings below, in VS
-# the diff markers are never inserted). Diff markers may cause the following 
-# file extensions to fail to load in VS. An alternative would be to treat
-# these files as binary and thus will always conflict and require user
-# intervention with every merge. To do so, just uncomment the entries below
-###############################################################################
-#*.sln       merge=binary
-#*.csproj    merge=binary
-#*.vbproj    merge=binary
-#*.vcxproj   merge=binary
-#*.vcproj    merge=binary
-#*.dbproj    merge=binary
-#*.fsproj    merge=binary
-#*.lsproj    merge=binary
-#*.wixproj   merge=binary
-#*.modelproj merge=binary
-#*.sqlproj   merge=binary
-#*.wwaproj   merge=binary
+*.txt text
+*.md text
+*.rst text
+*.html text
+*.css text
+*.js text
+*.json text
+*.xml text
+*.yml text
+*.yaml text
+*.csv text
+*.tsv text
+*.sql text
+*.py text
+*.java text
+*.c text
+*.cpp text
+*.h text
+*.hpp text
+*.cs text
+*.php text
+*.rb text
+*.go text
+*.rs text
+*.swift text
+*.kt text
+*.kts text
+*.scala text
+*.ts text
+*.jsx text
+*.tsx text
+*.vue text
+*.svelte text
 
-###############################################################################
-# behavior for image files
-#
-# image files are treated as binary by default.
-###############################################################################
-#*.jpg   binary
-#*.png   binary
-#*.gif   binary
+# ======================
+# ДВОИЧНЫЕ ФАЙЛЫ
+# ======================
 
-###############################################################################
-# diff behavior for common document formats
-# 
-# Convert binary document formats to text before diffing them. This feature
-# is only available from the command line. Turn it on by uncommenting the 
-# entries below.
-###############################################################################
-#*.doc   diff=astextplain
-#*.DOC   diff=astextplain
-#*.docx  diff=astextplain
-#*.DOCX  diff=astextplain
-#*.dot   diff=astextplain
-#*.DOT   diff=astextplain
-#*.pdf   diff=astextplain
-#*.PDF   diff=astextplain
-#*.rtf   diff=astextplain
-#*.RTF   diff=astextplain
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.bmp binary
+*.tiff binary
+*.ico binary
+*.pdf binary
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+*.ppt binary
+*.pptx binary
+*.zip binary
+*.tar binary
+*.gz binary
+*.rar binary
+*.7z binary
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+*.class binary
+*.jar binary
+*.war binary
+*.ear binary
+
+# ======================
+# НАСТРОЙКИ КОНЦОВ СТРОК
+# ======================
+
+
+*.sh text eol=lf
+*.bash text eol=lf
+*.zsh text eol=lf
+*.ps1 text eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# ======================
+# ДИФФИРОВАНИЕ
+# ======================
+
+
+*.pdf diff=astextplain
+*.doc diff=astextplain
+*.docx diff=astextplain
+
+# Кастомные diff драйверы
+[attr]diff-json text diff=json
+*.json diff=json
+
+[attr]diff-xml text diff=xml
+*.xml diff=xml
+
+# ======================
+# ЯЗЫКИ ПРОГРАММИРОВАНИЯ
+# ======================
+
+# Python
+*.py diff=python
+*.py linguist-language=Python
+
+# JavaScript/TypeScript
+*.js linguist-language=JavaScript
+*.jsx linguist-language=JavaScript
+*.ts linguist-language=TypeScript
+*.tsx linguist-language=TypeScript
+
+# Java
+*.java linguist-language=Java
+
+# C#
+*.cs linguist-language=C#
+
+# Go
+*.go linguist-language=Go
+
+# Rust
+*.rs linguist-language=Rust
+
+# PHP
+*.php linguist-language=PHP
+
+# Ruby
+*.rb linguist-language=Ruby
+
+# Swift
+*.swift linguist-language=Swift
+
+# Kotlin
+*.kt linguist-language=Kotlin
+*.kts linguist-language=Kotlin
+
+# ======================
+# ОСОБЫЕ ФАЙЛЫ
+# ======================
+
+
+package.json -whitespace
+package-lock.json -whitespace
+yarn.lock -whitespace
+
+
+*.sh linguist-language=Shell script
+
+# ======================
+# ЭКСПОРТ ИГНОРИРУЕМЫХ ФАЙЛОВ
+# ======================
+
+
+.gitattributes export-ignore
+.gitignore export-ignore
+README.md export-ignore
+LICENSE export-ignore
+
+# ======================
+# ПРОЧИЕ НАСТРОЙКИ
+# ======================
+
+
+*.xml merge=union
+*.json merge=union
+*.yml merge=union
+*.yaml merge=union
+
+
+*.data -delta
+*.pack -delta
+
+# ======================
+# КОДИРОВКИ
+# ======================
+
+
+*.txt utf-8
+*.md utf-8
+*.csv utf-8
+
+# ======================
+# РАЗНОЕ
+# ======================
+
+
+*.sh text eol=lf
