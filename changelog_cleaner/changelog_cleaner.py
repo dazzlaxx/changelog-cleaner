@@ -55,7 +55,7 @@ def check_version_uniqueness(content):
     return True, []
 
 if __name__ == '__main__':
-    input_filename = 'CHANGELOG for developers.md'
+    input_filename = 'CHANGELOG for developerss.md'
     output_filename = 'CHANGELOG.md'
     
     success, cleaned_content = remove_comment_blocks(input_filename, output_filename)
