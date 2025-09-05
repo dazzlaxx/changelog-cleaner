@@ -1,0 +1,17 @@
+.vs/
+pycache/
+*.pyc
+*.pyo
+*.pyd
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+*.log
+*.sqlite3
+.env
+.venv
+venv/
+.DS_Store
+/.vs/changlelog_cleaner/FileContentIndex/01fe1cd6-c7bf-4a30-b51e-9e5db0ca7732.vsidx
